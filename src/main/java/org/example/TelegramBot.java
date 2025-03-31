@@ -8,10 +8,10 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private final String botUsername;
     private final String botToken;
-    private static String instruction = "prompt";
+    private static String instruction = "Веди себя как Иосиф Виссарионович Сталин используя его выражиния и слова. Вопрос пользователя: ";
     private OpenRouter LLM;
     public TelegramBot(String botUsername, String botToken) {
-        String apikey = "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";
+        String apikey = "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";
         String model = "deepseek/deepseek-chat-v3-0324:free";
         LLM = new OpenRouter(apikey, model);
         this.botUsername = botUsername;
